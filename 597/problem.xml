@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="3" short-name="extraterrestrial-visitors" url="https://polygon.codeforces.com/p6Uo1Z4/Daria_Dyuldeva/extraterrestrial-visitors">
+    <names>
+        <name language="russian" value="Внеземные гости"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>16777216</memory-limit>
+            <test-count>52</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="generator 1 1" method="generated"/>
+                <test cmd="generator 1 2" method="generated"/>
+                <test cmd="generator 1 3" method="generated"/>
+                <test cmd="generator 1 4" method="generated"/>
+                <test cmd="generator 1 5" method="generated"/>
+                <test cmd="generator 1 6" method="generated"/>
+                <test cmd="generator 1 7" method="generated"/>
+                <test cmd="generator 1 8" method="generated"/>
+                <test cmd="generator 1 9" method="generated"/>
+                <test cmd="generator 1 10" method="generated"/>
+                <test cmd="generator 1 11" method="generated"/>
+                <test cmd="generator 1 12" method="generated"/>
+                <test cmd="generator 1 13" method="generated"/>
+                <test cmd="generator 1 14" method="generated"/>
+                <test cmd="generator 1 15" method="generated"/>
+                <test cmd="generator 2 16" method="generated"/>
+                <test cmd="generator 2 17" method="generated"/>
+                <test cmd="generator 2 18" method="generated"/>
+                <test cmd="generator 2 19" method="generated"/>
+                <test cmd="generator 2 20" method="generated"/>
+                <test cmd="generator 2 21" method="generated"/>
+                <test cmd="generator 2 22" method="generated"/>
+                <test cmd="generator 2 23" method="generated"/>
+                <test cmd="generator 2 24" method="generated"/>
+                <test cmd="generator 2 25" method="generated"/>
+                <test cmd="generator 2 26" method="generated"/>
+                <test cmd="generator 2 27" method="generated"/>
+                <test cmd="generator 2 28" method="generated"/>
+                <test cmd="generator 2 29" method="generated"/>
+                <test cmd="generator 2 30" method="generated"/>
+                <test cmd="generator 3 31" method="generated"/>
+                <test cmd="generator 3 32" method="generated"/>
+                <test cmd="generator 3 33" method="generated"/>
+                <test cmd="generator 3 34" method="generated"/>
+                <test cmd="generator 3 35" method="generated"/>
+                <test cmd="generator 3 36" method="generated"/>
+                <test cmd="generator 3 37" method="generated"/>
+                <test cmd="generator 3 38" method="generated"/>
+                <test cmd="generator 3 39" method="generated"/>
+                <test cmd="generator 3 40" method="generated"/>
+                <test cmd="generator 4 41" method="generated"/>
+                <test cmd="generator 4 42" method="generated"/>
+                <test cmd="generator 4 43" method="generated"/>
+                <test cmd="generator 4 44" method="generated"/>
+                <test cmd="generator 4 45" method="generated"/>
+                <test cmd="generator 4 46" method="generated"/>
+                <test cmd="generator 4 47" method="generated"/>
+                <test cmd="generator 4 48" method="generated"/>
+                <test cmd="generator 4 49" method="generated"/>
+                <test cmd="generator 4 50" method="generated"/>
+                <test description="NO" method="manual" sample="true"/>
+                <test description="YES" method="manual" sample="true"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/check.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.g++17"/>
+                <binary path="files/generator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>1</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                </tests>
+            </testset>
+        </checker>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/resh.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/resh.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solutions.py" type="python.3"/>
+                <binary path="solutions/solutions.pys3" type="pythonx.3"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
