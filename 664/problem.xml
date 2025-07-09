@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="12" short-name="cutlets" url="https://polygon.codeforces.com/p0bkIKd/Daria_Dyuldeva/cutlets">
+    <names>
+        <name language="russian" value="Котлеты"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>16777216</memory-limit>
+            <test-count>50</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen -test=1" method="generated" sample="true"/>
+                <test cmd="gen -test=2" method="generated" sample="true"/>
+                <test cmd="gen -test=3" method="generated"/>
+                <test cmd="gen -test=4" method="generated"/>
+                <test cmd="gen -test=5" method="generated"/>
+                <test cmd="gen -test=6" method="generated"/>
+                <test cmd="gen -test=7" method="generated"/>
+                <test cmd="gen -test=8" method="generated"/>
+                <test cmd="gen -test=9" method="generated"/>
+                <test cmd="gen -test=10" method="generated"/>
+                <test cmd="gen -test=11" method="generated"/>
+                <test cmd="gen -test=12" method="generated"/>
+                <test cmd="gen -test=13" method="generated"/>
+                <test cmd="gen -test=14" method="generated"/>
+                <test cmd="gen -test=15" method="generated"/>
+                <test cmd="gen -test=16" method="generated"/>
+                <test cmd="gen -test=17" method="generated"/>
+                <test cmd="gen -test=18" method="generated"/>
+                <test cmd="gen -test=19" method="generated"/>
+                <test cmd="gen -test=20" method="generated"/>
+                <test cmd="gen -test=21" method="generated"/>
+                <test cmd="gen -test=22" method="generated"/>
+                <test cmd="gen -test=23" method="generated"/>
+                <test cmd="gen -test=24" method="generated"/>
+                <test cmd="gen -test=25" method="generated"/>
+                <test cmd="gen -test=26" method="generated"/>
+                <test cmd="gen -test=27" method="generated"/>
+                <test cmd="gen -test=28" method="generated"/>
+                <test cmd="gen -test=29" method="generated"/>
+                <test cmd="gen -test=30" method="generated"/>
+                <test cmd="gen -test=31" method="generated"/>
+                <test cmd="gen -test=32" method="generated"/>
+                <test cmd="gen -test=33" method="generated"/>
+                <test cmd="gen -test=34" method="generated"/>
+                <test cmd="gen -test=35" method="generated"/>
+                <test cmd="gen -test=36" method="generated"/>
+                <test cmd="gen -test=37" method="generated"/>
+                <test cmd="gen -test=38" method="generated"/>
+                <test cmd="gen -test=39" method="generated"/>
+                <test cmd="gen -test=40" method="generated"/>
+                <test cmd="gen -test=41" method="generated"/>
+                <test cmd="gen -test=42" method="generated"/>
+                <test cmd="gen -test=43" method="generated"/>
+                <test cmd="gen -test=44" method="generated"/>
+                <test cmd="gen -test=45" method="generated"/>
+                <test cmd="gen -test=46" method="generated"/>
+                <test cmd="gen -test=47" method="generated"/>
+                <test cmd="gen -test=48" method="generated"/>
+                <test cmd="gen -test=49" method="generated"/>
+                <test cmd="gen -test=50" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker_cotlets.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker_cotlets.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker_cotlets.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>2</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                    <test verdict="ok"/>
+                </tests>
+            </testset>
+        </checker>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/solutions_cotleta.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/solutions_cotleta.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solutions_cotleta2.py" type="python.3"/>
+                <binary path="solutions/solutions_cotleta2.pys3" type="pythonx.3"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
